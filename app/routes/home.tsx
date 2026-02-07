@@ -1,9 +1,9 @@
 import type { Route } from "./+types/home";
 import AppLayout from "~/components/layout/AppLayout";
-import HeroSection from "~/components/herosection";
-import AboutSection from "~/components/about";
-import SkillsSection from "~/components/skillcard";
-import ContactSection from "~/components/contactsection";
+import HeroSection from "~/components/HeroSection";
+import AboutSection from "~/components/About";
+import SkillCard from "~/components/SkillCard";
+import ContactSection from "~/components/ContactSection";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -20,7 +20,7 @@ export default function Home() {
     <AppLayout>
       <HeroSection />
       <AboutSection />
-      <SkillsSection />
+      <SkillCard />
       <ContactSection />
     </AppLayout>
   );

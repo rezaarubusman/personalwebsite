@@ -1,5 +1,5 @@
-import Navigationbar from "../navigationbar";
-import Footer from "../footer";
+import Navigationbar from "../Navigationbar";
+import Footer from "../Footer";
 
 export default function AppLayout({
   children,
