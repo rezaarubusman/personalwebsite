@@ -2,8 +2,8 @@ import { useState, useEffect, useMemo } from "react";
 import type { ReactNode } from "react";
 import { Input } from "~/components/ui/input";
 import { Search } from "lucide-react";
-import { skills } from "data/skills";
-import SkillsCard from "./Kemampuan";
+import { skills } from "../../data/skills"; 
+import Kemampuan from "./Kemampuan"; 
 import type { Skill } from "../../types/skills";
 
 export default function SkillsSection() {
@@ -33,7 +33,7 @@ export default function SkillsSection() {
     if (!skill) continue;
 
     skillCards.push(
-      <SkillsCard key={skill.id} skill={skill} />
+      <Kemampuan key={skill.id} skill={skill} />
     );
   }
 
