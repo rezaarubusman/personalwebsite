@@ -4,7 +4,7 @@ import { Input } from "~/components/ui/input";
 import { Search } from "lucide-react";
 import { skills } from "data/skills";
 import SkillsCard from "./SkillsCard";
-import type { Skill } from "types/skills";
+import type { Skill } from "~/skills";
 
 export default function SkillsSection() {
   const [query, setQuery] = useState("");
