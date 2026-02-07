@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import { Input } from "~/components/ui/input";
 import { Search } from "lucide-react";
 import { skills } from "data/skills";
-import SkillsCard from "./SkillsCard";
-import type { Skill } from "~/skills";
+import SkillsCard from "./Kemampuan";
+import type { Skill } from "../../types/skills";
 
 export default function SkillsSection() {
   const [query, setQuery] = useState("");
